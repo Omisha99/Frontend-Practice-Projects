@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Library Management System</title>
+    <link rel="icon" href="./src/images/bg.jpg" type="Images/jpg" > <!-- Image in the tab bar-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="BasicInfo" method="POST">
+            <h1 class="form__title">Library Database</h1>
+            <div class="form__message form__message--error"></div> 
+            <div class="form__input-group"> 
+                <label for="fname" class="form__input--label">First Name</label>
+                <input type="text" id="fname" class="form__input" autofocus placeholder="First Name" required>
+            </div>
+            <div class="form__input-group"> 
+                <label for="lname" class="form__input--label">Last Name</label>
+                <input type="text" id="lname" class="form__input" autofocus placeholder="Last Name" required>
+            </div>
+            <div class="form__input-group"> 
+                <label for="libid" class="form__input--label">Library ID</label>
+                <input type="text" id="libid" class="form__input" autofocus placeholder="Library ID" required>
+            </div>
+            <div class="form__input-group"> 
+                <label for="ano" class="form__input--label">Accession Number</label>
+                <input type="number" id="ano" class="form__input" autofocus placeholder="Accession Number">
+            </div>
+            <div class="form__input-group"> 
+                <label for="bid" class="form__input--label">Book ID</label>
+                <input type="number" id="bid" class="form__input" autofocus placeholder="Book ID">
+            </div>
+            <div class="form__input-group"> 
+                <label for="title" class="form__input--label">Book Title</label>
+                <input type="text" id="title" class="form__input" autofocus placeholder="Book Title" required>
+            </div>
+            <div class="form__input-group"> 
+                <label for="brs" class="form__input--label">Book Price</label>
+                <input type="number" id="brs" class="form__input" autofocus placeholder="Book Price" required>
+                <div id="error" class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="isd" class="form__input--label">Issue Date</label>
+                <input type="date" id="isd" class="form__input" autofocus placeholder="Date of Issue" required>
+            </div>
+            <div class="form__input-group"> 
+                <label for="rd" class="form__input--label">Return Date</label>
+                <input type="date" id="rd" class="form__input" autofocus placeholder="Return date" required>
+            </div>
+            <button class="form__button" type="submit" onclick="onSubmit()">Check Fine</button>
+            <script src="./src/main.js"></script>
+        </form>
+    </div>
+</body>
