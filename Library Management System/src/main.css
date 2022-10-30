@@ -1,151 +1,149 @@
 body {
-    /* Defining colors for later use  */
-    --color-primary: #a10071;
-    --color-primary-dark: #ffbb00;
-    --color-error: #b90066;
-    --color-success: #59c500;
-    --border-radius: 30px;
+  /* Defining colors for later use  */
+  --color-primary: #07375c;
+  --color-primary-dark: #fff369;
+  --color-error: #b90066;
+  --color-success: #59c500;
+  --border-radius: 30px;
 
-    margin: 10px;
-    height: 100vh;
-    /* Vertically and Horizontally center */
-    display: grid;
-    align-items: center;
-    justify-content: center;
+  margin: 10px;
+  height: 100vh;
+  /* Vertically and Horizontally center */
+  display: grid;
+  align-items: center;
+  justify-content: center;
 
-    font-size: 18px;
-    background: url(./Images/bg1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    scroll-behavior: smooth;
+  font-size: 18px;
+  background: url(./Images/bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 .container {
-    width: 400px;
-    max-width: 400px;
-    /* rem implies unit. So 1rem means 1 unit of the base font size (i.e 18px) */
-    margin: 1rem;
-    padding: 2rem;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-    background: #211e248f;
-    backdrop-filter: blur(6px);
-    
+  width: 400px;
+  max-width: 400px;
+  /* rem implies unit. So 1rem means 1 unit of the base font size (i.e 18px) */
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: #211e248f;
+  backdrop-filter: blur(6px);
 }
 
 .container,
 .form__input,
 .form__button {
-    font: 500 1rem 'Sarabun', sans-serif;
+  font: 500 1rem 'Sarabun', sans-serif;
 }
 
 /* Remove extra margin from above and below the first and last headings */
 .form > *:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .form > *:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Centering the Title */
 .form__title {
-    margin-bottom: 2rem;
-    text-align: center;
-    color: var(--color-primary-dark);
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-primary-dark);
 }
 
 /* Align message to be displayed */
 .form__message {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* Change success message color */
 .form__message--success {
-    color: var(--color-success);
+  color: var(--color-success);
 }
 
 /* Change Error message color */
 .form__message--error {
-    color: var(--color-error);
+  color: var(--color-error);
 }
 
 /* Add margin after input fields */
 .form__input-group {
-    margin-bottom: 1rem;
-    transition: all 0.3s;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
 }
 
 /* Stylizing the input fields */
 .form__input {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    box-sizing: border-box;
-    border-radius: var(--border-radius);
-    border: 1px solid #b9b9b9d2;
-    outline: none;
-    background: #eeeeeed2;
-    transition: background 0.2s, border-color 0.2s;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #b9b9b9d2;
+  outline: none;
+  background: #eeeeeed2;
+  transition: background 0.2s, border-color 0.2s;
 }
 
 .form__input::placeholder {
-    color: #adadad;
+  color: #adadad;
 }
 
 .form__input:focus {
-    border-color: var(--color-primary);
-    background: #ffffff;
+  border-color: var(--color-primary);
+  background: #ffffff;
 }
 
 /* Change input box color on error */
 .form__input--error {
-    color: var(--color-error);
-    border-color: var(--color-error);
+  color: var(--color-error);
+  border-color: var(--color-error);
 }
 
 /* Style error message */
 .form__input-error-message {
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    font-size: 0.85rem;
-    color: var(--color-error);
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
 }
 
 /* Styling the button */
 .form__button {
-    width: 100%;
-    padding: 1rem 2rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #ffffff;
-    border: none;
-    border-radius: var(--border-radius);
-    outline: none;
-    cursor: pointer;
-    background: var(--color-primary);
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
 }
 
 .form__button:hover {
-    background: var(--color-primary-dark);
+  background: var(--color-primary-dark);
 }
 
 /* Scale animation on button */
 .form__button:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 /* Align text center */
 .form__text {
-    text-align: center;
+  text-align: center;
 }
 
 .form__input--label {
-    font-size: 1.15rem;
-    color: var(--color-primary-dark);
-    transition: all 0.3s;
-    margin-left: 10px;
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+  transition: all 0.3s;
+  margin-left: 10px;
 }
-
